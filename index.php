@@ -1,3 +1,3 @@
 <?php
-echo "Test Server again";
+echo "Test Server again test";
 ?>
