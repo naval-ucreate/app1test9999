@@ -1,4 +1,6 @@
 <?php
+echo "add Table From here";
+/*
 require_once('config.php');
 $createTable = "CREATE TABLE emp_data(
     name text,
@@ -7,4 +9,4 @@ $createTable = "CREATE TABLE emp_data(
     salary integer
     )";
 $conn   = pgSqlConnect();
-$result = pg_query($conn, $createTable);
+$result = pg_query($conn, $createTable); */
