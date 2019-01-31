@@ -9,4 +9,10 @@ function pgSqlConnect()
     if($conn)
     return $conn;
 }
+function testConfig()
+{
+    $name = "naval";
+    return $name;
+}
+
 
