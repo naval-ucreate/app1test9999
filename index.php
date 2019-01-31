@@ -6,12 +6,7 @@ http://tripal.info/tutorials/v3.x/installation/server-setup/ubuntu-18.04
 */
 require_once('config.php');
 $conn = pgSqlConnect();
-
-
-
-
-
-$createTable = "CREATE TABLE emp_data(
+$createTable = "CREATE TABLE IF NOT EXISTS  emp_data(
     name text,
     age integer,
     designation text,
@@ -20,7 +15,7 @@ $createTable = "CREATE TABLE emp_data(
 $conn   = pgSqlConnect();
 $result = pg_query($conn, $createTable);
 
-/*
+
 //$insertQuery    = "insert into emp_data(name,age,designation,salary) values('Ashok',12,'test',12000)";
 //$result         = pg_query($conn, $insertQuery );
 
@@ -31,7 +26,7 @@ while ($data = pg_fetch_array($result))
 {
   print_R($data);
 }
-*/
+
 
 
 
