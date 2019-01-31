@@ -5,6 +5,8 @@ phpinfo();
 https://docs.jelastic.com/connection-to-postgresql-for-php
 http://tripal.info/tutorials/v3.x/installation/server-setup/ubuntu-18.04
 */
+ini_set("display_errors", "1");
+error_reporting(E_ALL);
 require_once('config.php');
 $res    = testConfig();
 echo    $res;
